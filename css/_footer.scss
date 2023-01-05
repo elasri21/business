@@ -1,0 +1,148 @@
+/* start footer */
+footer {
+    background-color: $white;
+    .container {
+        .useful-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 30px;
+            margin-bottom: 30px;
+            .with-logo {
+                .logo {
+                    a {
+                        font-size: 40px;
+                        font-weight: 700;
+                        color: $title-c;
+                        text-transform: capitalize;
+                        margin-bottom: 20px;
+                    }
+                }
+                p {
+                    max-width: 300px;
+                }
+            }
+            .links {
+                h3 {
+                    font-size: 20px;
+                    text-transform: capitalize;
+                    color: $title-c;
+                    font-weight: 600;
+                    margin-bottom: 30px;
+                }
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    li {
+                        a {
+                            display: block;
+                            font-size: 16px;
+                            font-weight: 400;
+                            color: $text-color;
+                            text-transform: capitalize;
+                            &:hover {
+                                color: $main-blue;
+                            }
+                        }
+                    }
+                }
+                p {
+                    max-width: 300px;
+                }
+                form {
+                    position: relative;
+                    input {
+                        display: block;
+                        width: 100%;
+                        padding: 15px 30px;
+                        border: 1px solid $border-color;
+                        border-radius: 6px;
+                        font-size: 16px;
+                        color: $text-color;
+                        caret-color: $main-blue;
+                        &::placeholder {
+                            font-size: 16px;
+                            text-transform: capitalize;
+                            color: $text-color;
+                            transition: .3s;
+                        }
+                        &:focus {
+                            border-color: $main-blue;
+                            &::placeholder {
+                                opacity: 0;
+                            }
+                        }
+                    }
+                    button {
+                        border: none;
+                        outline: none;
+                        cursor: pointer;
+                        background-color: $main-blue;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        right: 10px;
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 6px;
+                        transition: .3s;
+                        i {
+                            font-size: 15px;
+                            color: $white;
+                        }
+                        &:hover {
+                            background-color: $blue;
+                        }
+                    }
+                }
+            }
+        }
+        .copy-right {
+            padding-top: 30px;
+            border-top: 1px solid $border-color;
+            text-align: center;
+            p {
+                font-size: 15px;
+                font-weight: 400;
+                a {
+                    font-size: 16px;
+                    font-weight: 600;
+                    margin-right: 6px;
+                    color: $text-color;
+                    &:hover {
+                        color: $main-blue;
+                    }
+                }
+            }
+        }
+    }
+    .go-up {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 4px;
+        background-color: $main-blue;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        transition: .4s;
+        i {
+            font-size: 20px;
+            color: $white;
+        }
+        &:hover {
+            background-color: $blue;
+            bottom: 25px;
+        }
+        &.hide {
+            opacity: 0;
+        }
+    }
+}
+/* end footer */
